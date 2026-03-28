@@ -65,3 +65,25 @@
 ### 目標路徑
 
 PRD 產出後放在 `deliverables/<產品名>-PRD.md`，使用者複製到 spec-forge-agent 的 `Projects/<專案名>/PRD.md` 即可銜接。
+
+---
+
+## 記憶管理
+
+Agent 的長期記憶存放在專案根目錄 `memory/`，不使用 Claude Code 原生記憶系統：
+
+- **`memory/BRAIN.md`**：決策原則、偏好、重要事實。每次對話自動載入
+- **`memory/CHANGELOG.md`**：系統本身的變更紀錄（目錄結構、流程、腳本）
+
+### 何時寫入
+
+- 使用者說「我決定」「那就用」「以後都」→ 寫入 BRAIN.md 決策區
+- 使用者說「我偏好」「我喜歡」→ 寫入 BRAIN.md 偏好區
+- 學到使用者的背景或專案事實 → 寫入 BRAIN.md 事實區
+- 系統結構有變更（目錄、skill、protocol） → 寫入 CHANGELOG.md
+
+### 原則
+
+- 記憶跟著 repo 走，不依賴任何 AI 工具的內建記憶機制
+- 寧可重複寫，不可遺漏
+- 不存可從程式碼或 git log 推導的資訊
