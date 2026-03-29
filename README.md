@@ -243,6 +243,23 @@ Handoff 流程：
 
 ---
 
+## Author
+
+**Andrew Yen（顏士傑）**
+
+AdTech 產品經理，現任職於第五代虛擬科技（VMFive / ADISON）。
+
+職涯從政府標案新創起步，歷經 QA 測試工程師、CRM 專案經驗，到現在的廣告科技 PM。這條不算典型的路徑，讓我累積了跨領域的產品思維：從搞懂政府標書的眉角、建立系統邊界的概念、梳理企業部門 BPMN 流程，到在 AdTech 領域處理平台規劃、流量數據儀表板、跨部門協作的廣告格式開發 SOP。
+
+我相信 PM 最關鍵的工作發生在 **問題空間** — 搞清楚「該不該做」比「怎麼做」重要得多。但現實是，大量的時間被消耗在文件格式、流程工具、重複的結構化作業上，真正用來思考決策的時間反而被壓縮。
+
+這個專案是我嘗試用 AI Agent 解決這個問題的起點：**讓 PM 專注在做『對』的決策，把結構化的苦力交給 Copilot。**
+
+- GitHub：[@jk831224](https://github.com/jk831224)
+- LinkedIn：[Shih-chieh Yen](https://www.linkedin.com/in/shihchiehyen)
+
+---
+
 ## License
 
 MIT
