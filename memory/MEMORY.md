@@ -1,0 +1,3 @@
+- [Copilot 協作模式](feedback_copilot_mode.md) — 即時維護活的 PRD 文件，Preview 驅動，非教練式分階段產出
+- [下游 agent 銜接](project_downstream_agent.md) — spec-forge-agent 接收 PRD.md 產出 DBML + Gherkin
+- [v2 能力升級](project_v2_upgrade.md) — 2026-03-29 基於軟體需求課程新增 12 項進階能力（Cynefin/INVEST/GWT/NFR 等）

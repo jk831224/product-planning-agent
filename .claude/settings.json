@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ./scripts/prd-status.sh 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Scanning PRD status..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; echo \"$f\" | grep -q 'PRD\\.md$' && bash ./scripts/validate-prd.sh \"$f\" || true; } 2>/dev/null || true",
+            "timeout": 10,
+            "statusMessage": "Validating PRD..."
+          }
+        ]
+      }
+    ]
+  }
+}
